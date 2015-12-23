@@ -7,6 +7,7 @@ define(['angular', 'require'], function(angular, require) {
   app.directive('uwBody', function(){
     return {
       restrict : 'E',
+      transclude : true,
       templateUrl : require.toUrl('./partials/body.html'),
       controller : "PortalMainController"
     };
